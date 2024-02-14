@@ -9,7 +9,7 @@ class CveProjectProvider(VulnDescriptionProvider):
     """
     Provides vulnerability descriptions using requests to CVEProject
     """
-    uri_template = 'https://raw.githubusercontent.com/CVEProject/cvelist/master/{}/{}/{}.json'
+    uri_template = 'https://raw.gitmirror.com/CVEProject/cvelist/master/{}/{}/{}.json'
     nist_uri_template = 'https://nvd.nist.gov/vuln/detail/{}'
 
     def __init__(self, session: Session):
